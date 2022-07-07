@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "tecnickcom/tcpdf": "^6.3.5",
+        "consoneo/tcpdf.transverse": "^6.3.5",
         "consoneo/fpdi.transverse": "^2.3"
     }
 }
