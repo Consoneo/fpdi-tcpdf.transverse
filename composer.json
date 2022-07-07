@@ -19,7 +19,7 @@
         ]
     },
     "require": {
-        "consoneo/tcpdf.transverse": "6.1.19.1",
+        "consoneo/tcpdf.transverse": "6.2.19.1",
         "consoneo/fpdi.transverse": "1.6.3.1"
     },
     "conflict": {
