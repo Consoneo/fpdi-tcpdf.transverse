@@ -1,6 +1,6 @@
 {
     "name": "consoneo/fpdi-tcpdf.transverse",
-    "version": "1.6.3.1",
+    "version": "1.6.3.2",
     "homepage": "https://www.setasign.com/fpdi",
     "description": "Kind of metadata package for dependencies of the latest versions of FPDI and TCPDF.",
     "type": "library",
@@ -19,7 +19,7 @@
         ]
     },
     "require": {
-        "consoneo/tcpdf.transverse": "6.2.19.1",
+        "consoneo/tcpdf.transverse": "6.2.19.2",
         "consoneo/fpdi.transverse": "1.6.3.1"
     },
     "conflict": {
