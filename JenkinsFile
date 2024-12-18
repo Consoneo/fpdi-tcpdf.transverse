@@ -50,9 +50,7 @@ pipeline {
                     package_path = findFiles(glob: '**/package.zip')[0].path
                     container('curl') {
                         withCredentials([usernameColonPassword(credentialsId:'svc-consoneo-jenkins', variable: 'USERPASS')]) {
-                            final def (int http_code,
-                                        String response
-                            ) = sh(script: "curl -s -w '\\n%{http_code}\\n%{http_response}' -u \"$USERPASS\" \"${composer_repo_selected}/${vendor_name}/${project_name}/${version}/\" --upload-file \"$package_path\"",
+                            final def (String response, int http_code) = sh(script: "curl -s -w '\\n%{http_code}' -u \"$USERPASS\" \"${composer_repo_selected}/${vendor_name}/${project_name}/${version}/\" --upload-file \"$package_path\"",
                                                                             returnStdout: true).trim().tokenize("\n")
                             echo "HTTP response status code: $http_code"
                             if (http_code > 399) {
