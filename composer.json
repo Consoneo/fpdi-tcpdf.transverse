@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "consoneo/tcpdf.transverse": "master",
-        "consoneo/fpdi.transverse": "master"
+        "consoneo/tcpdf.transverse": "v1.0.0",
+        "consoneo/fpdi.transverse": "v2.4.0"
     }
 }
